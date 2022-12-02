@@ -9,4 +9,5 @@ const (
 	FireteamPlatformBlizzard     = 3
 	FireteamPlatformSteam        = 4
 	FireteamPlatformStadia       = 5
+	FireteamPlatformEgs          = 6
 )

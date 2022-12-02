@@ -2,7 +2,6 @@ package bungieapigo
 
 type DestinyItemComponentSetOfuint32 struct {
 	Instances      DictionaryComponentResponseOfuint32AndDestinyItemInstanceComponent       `json:"instances"`
-	Perks          DictionaryComponentResponseOfuint32AndDestinyItemPerksComponent          `json:"perks"`
 	RenderData     DictionaryComponentResponseOfuint32AndDestinyItemRenderComponent         `json:"renderData"`
 	Stats          DictionaryComponentResponseOfuint32AndDestinyItemStatsComponent          `json:"stats"`
 	Sockets        DictionaryComponentResponseOfuint32AndDestinyItemSocketsComponent        `json:"sockets"`
@@ -11,4 +10,5 @@ type DestinyItemComponentSetOfuint32 struct {
 	TalentGrids    DictionaryComponentResponseOfuint32AndDestinyItemTalentGridComponent     `json:"talentGrids"`
 	PlugStates     DictionaryComponentResponseOfuint32AndDestinyItemPlugComponent           `json:"plugStates"`
 	Objectives     DictionaryComponentResponseOfuint32AndDestinyItemObjectivesComponent     `json:"objectives"`
+	Perks          DictionaryComponentResponseOfuint32AndDestinyItemPerksComponent          `json:"perks"`
 }

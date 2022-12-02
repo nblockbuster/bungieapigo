@@ -21,10 +21,12 @@ type DestinyObjectiveProgress struct {
 
 	// If progress has been made, and the progress can be measured numerically, this will be the value
 	// of that progress. You can compare it to the DestinyObjectiveDefinition.completionValue
-	// property for current vs. upper bounds, and use DestinyObjectiveDefinition.valueStyle to
-	// determine how this should be rendered. Note that progress, in Destiny 2, need not be a literal
-	// numeric progression. It could be one of a number of possible values, even a Timestamp. Always
-	// examine DestinyObjectiveDefinition.valueStyle before rendering progress.
+	// property for current vs. upper bounds, and use
+	// DestinyObjectiveDefinition.inProgressValueStyle or completedValueStyle to determine
+	// how this should be rendered. Note that progress, in Destiny 2, need not be a literal numeric
+	// progression. It could be one of a number of possible values, even a Timestamp. Always examine
+	// DestinyObjectiveDefinition.inProgressValueStyle or completedValueStyle before
+	// rendering progress.
 	Progress int `json:"progress"`
 
 	// As of Forsaken, objectives' completion value is determined dynamically at runtime.

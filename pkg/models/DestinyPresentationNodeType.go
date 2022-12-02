@@ -8,4 +8,5 @@ const (
 	DestinyPresentationNodeTypeCollectibles = 2
 	DestinyPresentationNodeTypeRecords      = 3
 	DestinyPresentationNodeTypeMetric       = 4
+	DestinyPresentationNodeTypeCraftable    = 5
 )

@@ -7,4 +7,5 @@ const (
 	PlatformFriendTypeXbox    = 1
 	PlatformFriendTypePSN     = 2
 	PlatformFriendTypeSteam   = 3
+	PlatformFriendTypeEgs     = 4
 )

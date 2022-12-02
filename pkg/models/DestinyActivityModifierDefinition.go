@@ -9,6 +9,9 @@ type DestinyActivityModifierDefinition struct {
 	// that display information.
 	DisplayProperties DestinyDisplayPropertiesDefinition `json:"displayProperties"`
 
+	DisplayInNavMode           bool `json:"displayInNavMode"`
+	DisplayInActivitySelection bool `json:"displayInActivitySelection"`
+
 	// The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not
 	// globally.
 	// When entities refer to each other in Destiny content, it is this hash that they are referring to.

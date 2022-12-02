@@ -95,6 +95,9 @@ type DestinyInventoryItemDefinition struct {
 	// Shocker)
 	Action DestinyItemActionBlockDefinition `json:"action"`
 
+	// Recipe items will have relevant crafting information available here.
+	Crafting DestinyItemCraftingBlockDefinition `json:"crafting"`
+
 	// If this item can exist in an inventory, this block will be non-null. In practice, every item that
 	// currently exists has one of these blocks. But note that it is not necessarily guaranteed.
 	Inventory DestinyItemInventoryBlockDefinition `json:"inventory"`

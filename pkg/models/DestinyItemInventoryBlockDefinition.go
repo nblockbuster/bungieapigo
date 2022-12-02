@@ -48,4 +48,7 @@ type DestinyItemInventoryBlockDefinition struct {
 	ExpiredInOrbitMessage string `json:"expiredInOrbitMessage"`
 
 	SuppressExpirationWhenObjectivesComplete bool `json:"suppressExpirationWhenObjectivesComplete"`
+
+	// A reference to the associated crafting 'recipe' item definition, if this item can be crafted.
+	RecipeItemHash int `json:"recipeItemHash"`
 }

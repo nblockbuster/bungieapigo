@@ -1,3 +1,3 @@
-module github.com/joshhunt/bungieapigo
+module github.com/nblockbuster/bungieapigo
 
-go 1.16
+go 1.19

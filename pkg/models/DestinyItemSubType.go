@@ -55,4 +55,5 @@ const (
 	DestinyItemSubTypeClassArmor            = 30
 	DestinyItemSubTypeBow                   = 31
 	DestinyItemSubTypeDummyRepeatableBounty = 32
+	DestinyItemSubTypeGlaive                = 33
 )

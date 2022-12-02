@@ -56,4 +56,7 @@ const (
 	// Show the value as a floating-point number. For example: "4.52" NOTE: Passed along from
 	// Investment as whole number with last two digits as decimal values (452 -> 4.52)
 	DestinyUnlockValueUIStyleRawFloat = 13
+
+	// Show the value as a level and a reward.
+	DestinyUnlockValueUIStyleLevelAndReward = 14
 )

@@ -86,4 +86,10 @@ const (
 	DestinyActivityModeTypeDungeon                 = 82
 	DestinyActivityModeTypeSundial                 = 83
 	DestinyActivityModeTypeTrialsOfOsiris          = 84
+	DestinyActivityModeTypeDares                   = 85
+	DestinyActivityModeTypeOffensive               = 86
+	DestinyActivityModeTypeLostSector              = 87
+	DestinyActivityModeTypeRift                    = 88
+	DestinyActivityModeTypeZoneControl             = 89
+	DestinyActivityModeTypeIronBannerRift          = 90
 )

@@ -19,4 +19,12 @@ const (
 	// If this bit is set, the item has a Masterwork plug inserted. This usually coincides with having a
 	// special "glowing" effect applied to the item's icon.
 	ItemStateMasterwork = 4
+
+	// If this bit is set, the item has been 'crafted' by the player. You may want to represent this
+	// visually with a "crafted" icon overlay.
+	ItemStateCrafted = 8
+
+	// If this bit is set, the item has a 'highlighted' objective. You may want to represent this with an
+	// orange-red icon border color.
+	ItemStateHighlightedObjective = 16
 )

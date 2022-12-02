@@ -43,4 +43,5 @@ const (
 	DestinyItemTypeWrapper           = 27
 	DestinyItemTypeSeasonalArtifact  = 28
 	DestinyItemTypeFinisher          = 29
+	DestinyItemTypePattern           = 30
 )

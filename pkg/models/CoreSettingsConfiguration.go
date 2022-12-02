@@ -6,6 +6,7 @@ type CoreSettingsConfiguration struct {
 	IgnoreReasons                  []CoreSetting         `json:"ignoreReasons"`
 	ForumCategories                []CoreSetting         `json:"forumCategories"`
 	GroupAvatars                   []CoreSetting         `json:"groupAvatars"`
+	DefaultGroupTheme              CoreSetting           `json:"defaultGroupTheme"`
 	DestinyMembershipTypes         []CoreSetting         `json:"destinyMembershipTypes"`
 	RecruitmentPlatformTags        []CoreSetting         `json:"recruitmentPlatformTags"`
 	RecruitmentMiscTags            []CoreSetting         `json:"recruitmentMiscTags"`

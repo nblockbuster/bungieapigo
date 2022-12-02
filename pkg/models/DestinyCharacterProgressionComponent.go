@@ -31,6 +31,13 @@ type DestinyCharacterProgressionComponent struct {
 	// item, and their statuses.
 	UninstancedItemObjectives map[int][]DestinyObjectiveProgress `json:"uninstancedItemObjectives"`
 
+	// Sometimes, you have items in your inventory that don't have instances, but still have perks
+	// (for example: Trials passage cards). This gives you the perk information for uninstanced
+	// items.
+	// This dictionary is keyed by item hash, which you can use to look up the corresponding item
+	// definition. The value is the list of perks states for the item.
+	UninstancedItemPerks map[int]DestinyItemPerksComponent `json:"uninstancedItemPerks"`
+
 	// The set of checklists that can be examined for this specific character, keyed by the hash
 	// identifier of the Checklist (DestinyChecklistDefinition)
 	// For each checklist returned, its value is itself a Dictionary keyed by the checklist's hash

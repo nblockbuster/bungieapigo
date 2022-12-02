@@ -137,6 +137,9 @@ type DestinyProfileResponse struct {
 	// COMPONENT TYPE: StringVariables
 	CharacterStringVariables DictionaryComponentResponseOfint64AndDestinyStringVariablesComponent `json:"characterStringVariables"`
 
+	// COMPONENT TYPE: Craftables
+	CharacterCraftables DictionaryComponentResponseOfint64AndDestinyCraftablesComponent `json:"characterCraftables"`
+
 	// Information about instanced items across all returned characters, keyed by the item's
 	// instance ID.
 	// COMPONENT TYPE: [See inside the DestinyItemComponentSet contract for component types.]

@@ -9,4 +9,5 @@ type DestinyPresentationNodeChildrenBlock struct {
 	Collectibles      []DestinyPresentationNodeCollectibleChildEntry `json:"collectibles"`
 	Records           []DestinyPresentationNodeRecordChildEntry      `json:"records"`
 	Metrics           []DestinyPresentationNodeMetricChildEntry      `json:"metrics"`
+	Craftables        []DestinyPresentationNodeCraftableChildEntry   `json:"craftables"`
 }

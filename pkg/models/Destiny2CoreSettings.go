@@ -13,7 +13,10 @@ type Destiny2CoreSettings struct {
 	MedalsRootNodeHash                     int    `json:"medalsRootNodeHash"`
 	ExoticCatalystsRootNodeHash            int    `json:"exoticCatalystsRootNodeHash"`
 	LoreRootNodeHash                       int    `json:"loreRootNodeHash"`
+	CraftingRootNodeHash                   int    `json:"craftingRootNodeHash"`
 	CurrentRankProgressionHashes           []int  `json:"currentRankProgressionHashes"`
+	InsertPlugFreeProtectedPlugItemHashes  []int  `json:"insertPlugFreeProtectedPlugItemHashes"`
+	InsertPlugFreeBlockedSocketTypeHashes  []int  `json:"insertPlugFreeBlockedSocketTypeHashes"`
 	UndiscoveredCollectibleImage           string `json:"undiscoveredCollectibleImage"`
 	AmmoTypeHeavyIcon                      string `json:"ammoTypeHeavyIcon"`
 	AmmoTypeSpecialIcon                    string `json:"ammoTypeSpecialIcon"`

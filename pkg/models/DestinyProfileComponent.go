@@ -34,9 +34,16 @@ type DestinyProfileComponent struct {
 	// available for the platform on which they last played.
 	SeasonHashes []int `json:"seasonHashes"`
 
+	// A list of hashes for event cards that a profile owns. Unlike most values in versionsOwned, these
+	// stay with the profile across all platforms.
+	EventCardHashesOwned []int `json:"eventCardHashesOwned"`
+
 	// If populated, this is a reference to the season that is currently active.
 	CurrentSeasonHash int `json:"currentSeasonHash"`
 
 	// If populated, this is the reward power cap for the current season.
 	CurrentSeasonRewardPowerCap int `json:"currentSeasonRewardPowerCap"`
+
+	// If populated, this is a reference to the event card that is currently active.
+	ActiveEventCardHash int `json:"activeEventCardHash"`
 }

@@ -38,4 +38,5 @@ type GeneralUser struct {
 	TwitchDisplayName                 string            `json:"twitchDisplayName"`
 	CachedBungieGlobalDisplayName     string            `json:"cachedBungieGlobalDisplayName"`
 	CachedBungieGlobalDisplayNameCode int               `json:"cachedBungieGlobalDisplayNameCode"`
+	EgsDisplayName                    string            `json:"egsDisplayName"`
 }

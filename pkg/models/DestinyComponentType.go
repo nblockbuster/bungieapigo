@@ -182,4 +182,7 @@ const (
 	// Returns a mapping of localized string variable hashes to values, on a per-account or
 	// per-character basis.
 	DestinyComponentTypeStringVariables = 1200
+
+	// Returns summary status information about all "Craftables" aka crafting recipe items.
+	DestinyComponentTypeCraftables = 1300
 )

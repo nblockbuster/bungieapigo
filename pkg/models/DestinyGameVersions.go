@@ -13,4 +13,6 @@ const (
 	DestinyGameVersionsYearTwoAnnualPass = 16
 	DestinyGameVersionsShadowkeep        = 32
 	DestinyGameVersionsBeyondLight       = 64
+	DestinyGameVersionsAnniversary30th   = 128
+	DestinyGameVersionsTheWitchQueen     = 256
 )

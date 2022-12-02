@@ -11,6 +11,7 @@ const (
 	BungieMembershipTypeTigerSteam    = 3
 	BungieMembershipTypeTigerBlizzard = 4
 	BungieMembershipTypeTigerStadia   = 5
+	BungieMembershipTypeTigerEgs      = 6
 	BungieMembershipTypeTigerDemon    = 10
 	BungieMembershipTypeBungieNext    = 254
 

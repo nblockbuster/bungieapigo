@@ -16,9 +16,13 @@ type DestinyRecordDefinition struct {
 	ObjectiveHashes  []int                         `json:"objectiveHashes"`
 	RecordValueStyle DestinyRecordValueStyle       `json:"recordValueStyle"`
 	ForTitleGilding  bool                          `json:"forTitleGilding"`
-	TitleInfo        DestinyRecordTitleBlock       `json:"titleInfo"`
-	CompletionInfo   DestinyRecordCompletionBlock  `json:"completionInfo"`
-	StateInfo        SchemaRecordStateBlock        `json:"stateInfo"`
+
+	// A hint to show a large icon for a reward
+	ShouldShowLargeIcons bool `json:"shouldShowLargeIcons"`
+
+	TitleInfo      DestinyRecordTitleBlock      `json:"titleInfo"`
+	CompletionInfo DestinyRecordCompletionBlock `json:"completionInfo"`
+	StateInfo      SchemaRecordStateBlock       `json:"stateInfo"`
 
 	// Presentation nodes can be restricted by various requirements. This defines the rules of those
 	// requirements, and the message(s) to be shown if these requirements aren't met.

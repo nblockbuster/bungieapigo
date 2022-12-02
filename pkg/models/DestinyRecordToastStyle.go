@@ -11,4 +11,5 @@ const (
 	DestinyRecordToastStyleMedalComplete           = 5
 	DestinyRecordToastStyleSeasonChallengeComplete = 6
 	DestinyRecordToastStyleGildedTitleComplete     = 7
+	DestinyRecordToastStyleCraftingRecipeUnlocked  = 8
 )

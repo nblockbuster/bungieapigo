@@ -18,4 +18,5 @@ const (
 	BungieCredentialTypeBattleNetId = 14
 	BungieCredentialTypeStadiaId    = 16
 	BungieCredentialTypeTwitchId    = 18
+	BungieCredentialTypeEgsId       = 20
 )

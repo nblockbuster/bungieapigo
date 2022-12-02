@@ -19,6 +19,10 @@ type DestinyMaterialRequirement struct {
 	// The amount of the material required.
 	Count int `json:"count"`
 
+	// If true, the material requirement count value is constant. Since The Witch Queen expansion,
+	// some material requirement counts can be dynamic and will need to be returned with an API call.
+	CountIsConstant bool `json:"countIsConstant"`
+
 	// If True, this requirement is "silent": don't bother showing it in a material requirements
 	// display. I mean, I'm not your mom: I'm not going to tell you you *can't* show it. But we won't show
 	// it in our UI.

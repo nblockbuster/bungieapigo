@@ -66,4 +66,10 @@ const (
 
 	// This indicates that the sale item is popular.
 	DestinyVendorItemStatePopular = 65536
+
+	// This indicates that the sale item is free.
+	DestinyVendorItemStateFree = 131072
+
+	// This indicates that the sale item is locked.
+	DestinyVendorItemStateLocked = 262144
 )

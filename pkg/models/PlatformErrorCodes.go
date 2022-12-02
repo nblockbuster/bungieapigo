@@ -152,6 +152,12 @@ const (
 	PlatformErrorCodesContentBabelCallFailed                                = 173
 	PlatformErrorCodesContentEnglishPostLiveForbidden                       = 174
 	PlatformErrorCodesContentLocaleEditPermissionDenied                     = 175
+	PlatformErrorCodesContentStackUnknownError                              = 176
+	PlatformErrorCodesContentStackNotFound                                  = 177
+	PlatformErrorCodesContentStackRateLimited                               = 178
+	PlatformErrorCodesContentStackTimeout                                   = 179
+	PlatformErrorCodesContentStackServiceError                              = 180
+	PlatformErrorCodesContentStackDeserializationFailure                    = 181
 	PlatformErrorCodesUserNonUniqueName                                     = 200
 	PlatformErrorCodesUserManualLinkingStepRequired                         = 201
 	PlatformErrorCodesUserCreateUnknownSqlResult                            = 202
@@ -190,6 +196,10 @@ const (
 	PlatformErrorCodesNonTransactionalEmailSendFailure                      = 235
 	PlatformErrorCodesUnknownErrorSettingGlobalDisplayName                  = 236
 	PlatformErrorCodesDuplicateGlobalDisplayName                            = 237
+	PlatformErrorCodesErrorRunningNameValidationChecks                      = 238
+	PlatformErrorCodesErrorDatabaseGlobalName                               = 239
+	PlatformErrorCodesErrorNoAvailableNameChanges                           = 240
+	PlatformErrorCodesErrorNameAlreadySetToInput                            = 241
 	PlatformErrorCodesMessagingUnknownError                                 = 300
 	PlatformErrorCodesMessagingSelfError                                    = 301
 	PlatformErrorCodesMessagingSendThrottle                                 = 302
@@ -291,6 +301,7 @@ const (
 	PlatformErrorCodesForumUserBannedFromThisTopic                          = 593
 	PlatformErrorCodesForumRecruitmentFireteamMembersOnly                   = 594
 	PlatformErrorCodesForumRequiresDestiny2Progress                         = 595
+	PlatformErrorCodesForumRequiresDestiny2EntitlementPurchase              = 596
 	PlatformErrorCodesGroupMembershipApplicationAlreadyResolved             = 601
 	PlatformErrorCodesGroupMembershipAlreadyApplied                         = 602
 	PlatformErrorCodesGroupMembershipInsufficientPrivileges                 = 603
@@ -426,6 +437,7 @@ const (
 	PlatformErrorCodesIgnoreNotFound                                        = 1007
 	PlatformErrorCodesIgnoreUserGloballyIgnored                             = 1008
 	PlatformErrorCodesIgnoreUserIgnored                                     = 1009
+	PlatformErrorCodesTargetUserIgnored                                     = 1010
 	PlatformErrorCodesNotificationSettingInvalid                            = 1100
 	PlatformErrorCodesPsnApiExpiredAccessToken                              = 1204
 	PlatformErrorCodesPSNExForbidden                                        = 1205
@@ -700,6 +712,8 @@ const (
 	PlatformErrorCodesTwitchCouldNotUnregisterUser                           = 2504
 	PlatformErrorCodesTwitchRequiresRelinking                                = 2505
 	PlatformErrorCodesTwitchNoPlatformChosen                                 = 2506
+	PlatformErrorCodesTwitchDropHistoryPermissionFailure                     = 2507
+	PlatformErrorCodesTwitchDropsRepairPartialFailure                        = 2508
 	PlatformErrorCodesTrendingCategoryNotFound                               = 2600
 	PlatformErrorCodesTrendingEntryTypeNotSupported                          = 2601
 	PlatformErrorCodesReportOffenderNotInPgcr                                = 2700
@@ -750,6 +764,12 @@ const (
 	PlatformErrorCodesClanFireteamTooManyOpenScheduledFireteams              = 3030
 	PlatformErrorCodesClanFireteamCannotReopenScheduledFireteams             = 3031
 	PlatformErrorCodesClanFireteamJoinNoAccountSpecified                     = 3032
+	PlatformErrorCodesClanFireteamMinDestiny2ProgressForCreation             = 3033
+	PlatformErrorCodesClanFireteamMinDestiny2ProgressForJoin                 = 3034
+	PlatformErrorCodesClanFireteamSMSOrPurchaseRequiredCreate                = 3035
+	PlatformErrorCodesClanFireteamPurchaseRequiredCreate                     = 3036
+	PlatformErrorCodesClanFireteamSMSOrPurchaseRequiredJoin                  = 3037
+	PlatformErrorCodesClanFireteamPurchaseRequiredJoin                       = 3038
 	PlatformErrorCodesCrossSaveOverriddenAccountNotFound                     = 3200
 	PlatformErrorCodesCrossSaveTooManyOverriddenPlatforms                    = 3201
 	PlatformErrorCodesCrossSaveNoOverriddenPlatforms                         = 3202
@@ -813,4 +833,18 @@ const (
 	PlatformErrorCodesErrorBungieFriendsUnableToRemoveRequest                = 3904
 	PlatformErrorCodesErrorBungieFriendsUnableToRemove                       = 3905
 	PlatformErrorCodesErrorBungieFriendsIdenticalSourceTarget                = 3906
+	PlatformErrorCodesErrorBungieFriendsSelf                                 = 3907
+	PlatformErrorCodesErrorBungieBlockSelf                                   = 3908
+	PlatformErrorCodesErrorBungieFriendsListFull                             = 3910
+	PlatformErrorCodesErrorBungieBlockListFull                               = 3911
+	PlatformErrorCodesErrorEgsUnknown                                        = 4000
+	PlatformErrorCodesErrorEgsBadRequest                                     = 4001
+	PlatformErrorCodesErrorEgsNotAuthorized                                  = 4002
+	PlatformErrorCodesErrorEgsForbidden                                      = 4003
+	PlatformErrorCodesErrorEgsAccountNotFound                                = 4004
+	PlatformErrorCodesErrorEgsWebException                                   = 4005
+	PlatformErrorCodesErrorEgsUnavailable                                    = 4006
+	PlatformErrorCodesErrorEgsJwksMissing                                    = 4007
+	PlatformErrorCodesErrorEgsJwtMalformedHeader                             = 4008
+	PlatformErrorCodesErrorEgsJwtMalformedPayload                            = 4009
 )
