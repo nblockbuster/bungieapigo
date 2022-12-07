@@ -3,24 +3,21 @@ package bungieapigo
 type PlatformErrorCodes int
 
 const (
-	PlatformErrorCodesNone                                      = 0
-	PlatformErrorCodesSuccess                                   = 1
-	PlatformErrorCodesTransportException                        = 2
-	PlatformErrorCodesUnhandledException                        = 3
-	PlatformErrorCodesNotImplemented                            = 4
-	PlatformErrorCodesSystemDisabled                            = 5
-	PlatformErrorCodesFailedToLoadAvailableLocalesConfiguration = 6
-	PlatformErrorCodesParameterParseFailure                     = 7
-	PlatformErrorCodesParameterInvalidRange                     = 8
-	PlatformErrorCodesBadRequest                                = 9
-	PlatformErrorCodesAuthenticationInvalid                     = 10
-	PlatformErrorCodesDataNotFound                              = 11
-	PlatformErrorCodesInsufficientPrivileges                    = 12
-	PlatformErrorCodesDuplicate                                 = 13
-
-	// Deprecated, please do not check for this value anywhere.
-	PlatformErrorCodesUnknownSqlResult = 14
-
+	PlatformErrorCodesNone                                                  = 0
+	PlatformErrorCodesSuccess                                               = 1
+	PlatformErrorCodesTransportException                                    = 2
+	PlatformErrorCodesUnhandledException                                    = 3
+	PlatformErrorCodesNotImplemented                                        = 4
+	PlatformErrorCodesSystemDisabled                                        = 5
+	PlatformErrorCodesFailedToLoadAvailableLocalesConfiguration             = 6
+	PlatformErrorCodesParameterParseFailure                                 = 7
+	PlatformErrorCodesParameterInvalidRange                                 = 8
+	PlatformErrorCodesBadRequest                                            = 9
+	PlatformErrorCodesAuthenticationInvalid                                 = 10
+	PlatformErrorCodesDataNotFound                                          = 11
+	PlatformErrorCodesInsufficientPrivileges                                = 12
+	PlatformErrorCodesDuplicate                                             = 13
+	PlatformErrorCodesUnknownSqlResult                                      = 14
 	PlatformErrorCodesValidationError                                       = 15
 	PlatformErrorCodesValidationMissingFieldError                           = 16
 	PlatformErrorCodesValidationInvalidInputError                           = 17
@@ -200,6 +197,9 @@ const (
 	PlatformErrorCodesErrorDatabaseGlobalName                               = 239
 	PlatformErrorCodesErrorNoAvailableNameChanges                           = 240
 	PlatformErrorCodesErrorNameAlreadySetToInput                            = 241
+	PlatformErrorCodesUserDisplayNameLessThanMinLength                      = 242
+	PlatformErrorCodesUserDisplayNameGreaterThanMaxLength                   = 243
+	PlatformErrorCodesUserDisplayNameContainsUnacceptableOrInvalidContent   = 244
 	PlatformErrorCodesMessagingUnknownError                                 = 300
 	PlatformErrorCodesMessagingSelfError                                    = 301
 	PlatformErrorCodesMessagingSendThrottle                                 = 302
@@ -410,6 +410,8 @@ const (
 	PlatformErrorCodesClanNameRestricted                                    = 751
 	PlatformErrorCodesClanCreationBan                                       = 752
 	PlatformErrorCodesClanCreationTenureRequirementsNotMet                  = 753
+	PlatformErrorCodesClanFieldContainsReservedTerms                        = 754
+	PlatformErrorCodesClanFieldContainsInappropriateContent                 = 755
 	PlatformErrorCodesItemAlreadyFollowed                                   = 801
 	PlatformErrorCodesItemNotFollowed                                       = 802
 	PlatformErrorCodesCannotFollowSelf                                      = 803
@@ -714,6 +716,8 @@ const (
 	PlatformErrorCodesTwitchNoPlatformChosen                                 = 2506
 	PlatformErrorCodesTwitchDropHistoryPermissionFailure                     = 2507
 	PlatformErrorCodesTwitchDropsRepairPartialFailure                        = 2508
+	PlatformErrorCodesTwitchNotAuthorized                                    = 2509
+	PlatformErrorCodesTwitchUnknownAuthorizationFailure                      = 2510
 	PlatformErrorCodesTrendingCategoryNotFound                               = 2600
 	PlatformErrorCodesTrendingEntryTypeNotSupported                          = 2601
 	PlatformErrorCodesReportOffenderNotInPgcr                                = 2700

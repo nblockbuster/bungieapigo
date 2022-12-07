@@ -92,4 +92,5 @@ const (
 	DestinyActivityModeTypeRift                    = 88
 	DestinyActivityModeTypeZoneControl             = 89
 	DestinyActivityModeTypeIronBannerRift          = 90
+	DestinyActivityModeTypeIronBannerZoneControl   = 91
 )

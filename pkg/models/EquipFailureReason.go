@@ -27,8 +27,16 @@ const (
 	// haven't reached that level yet.
 	EquipFailureReasonItemFailedLevelCheck = 8
 
-	// This item can't be equipped on the character requested, because it must be in that character's
-	// inventory first. Transfer the item to the character you want to equip it before you attempt to
-	// equip it.
-	EquipFailureReasonItemNotOnCharacter = 16
+	// This item is 'wrapped' and must be unwrapped before being equipped. NOTE: This value used to be
+	// called ItemNotOnCharacter but that is no longer accurate.
+	EquipFailureReasonItemWrapped = 16
+
+	// This item is not yet loaded and cannot be equipped yet.
+	EquipFailureReasonItemNotLoaded = 32
+
+	// This item is block-listed and cannot be equipped.
+	EquipFailureReasonItemEquipBlocklisted = 64
+
+	// This item does not meet the loadout requirements for the current activity
+	EquipFailureReasonItemLoadoutRequirementNotMet = 128
 )

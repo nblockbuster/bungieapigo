@@ -5,4 +5,5 @@ type NewsArticleRssResponse struct {
 	CurrentPaginationToken int                  `json:"CurrentPaginationToken"`
 	NextPaginationToken    int                  `json:"NextPaginationToken"`
 	ResultCountThisPage    int                  `json:"ResultCountThisPage"`
+	CategoryFilter         string               `json:"CategoryFilter"`
 }

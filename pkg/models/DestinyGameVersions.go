@@ -15,4 +15,5 @@ const (
 	DestinyGameVersionsBeyondLight       = 64
 	DestinyGameVersionsAnniversary30th   = 128
 	DestinyGameVersionsTheWitchQueen     = 256
+	DestinyGameVersionsLightfall         = 512
 )

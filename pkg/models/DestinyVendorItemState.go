@@ -72,4 +72,9 @@ const (
 
 	// This indicates that the sale item is locked.
 	DestinyVendorItemStateLocked = 262144
+
+	// This indicates that the sale item is paracausal.
+	DestinyVendorItemStateParacausal = 524288
+
+	DestinyVendorItemStateCryptarch = 1048576
 )
