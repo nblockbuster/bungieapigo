@@ -75,6 +75,9 @@ type DestinyProfileResponse struct {
 	// COMPONENT TYPE: StringVariables
 	ProfileStringVariables SingleComponentResponseOfDestinyStringVariablesComponent `json:"profileStringVariables"`
 
+	// COMPONENT TYPE: SocialCommendations
+	ProfileCommendations SingleComponentResponseOfDestinySocialCommendationsComponent `json:"profileCommendations"`
+
 	// Basic information about each character, keyed by the CharacterId.
 	// COMPONENT TYPE: Characters
 	Characters DictionaryComponentResponseOfint64AndDestinyCharacterComponent `json:"characters"`
@@ -82,6 +85,10 @@ type DestinyProfileResponse struct {
 	// The character-level non-equipped inventory items, keyed by the Character's Id.
 	// COMPONENT TYPE: CharacterInventories
 	CharacterInventories DictionaryComponentResponseOfint64AndDestinyInventoryComponent `json:"characterInventories"`
+
+	// The character loadouts, keyed by the Character's Id.
+	// COMPONENT TYPE: CharacterLoadouts
+	CharacterLoadouts DictionaryComponentResponseOfint64AndDestinyLoadoutsComponent `json:"characterLoadouts"`
 
 	// Character-level progression data, keyed by the Character's Id.
 	// COMPONENT TYPE: CharacterProgressions

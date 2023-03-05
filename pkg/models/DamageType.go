@@ -10,4 +10,5 @@ const (
 	DamageTypeVoid    = 4
 	DamageTypeRaid    = 5
 	DamageTypeStasis  = 6
+	DamageTypeStrand  = 7
 )

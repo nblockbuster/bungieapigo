@@ -46,4 +46,10 @@ type DestinyProfileComponent struct {
 
 	// If populated, this is a reference to the event card that is currently active.
 	ActiveEventCardHash int `json:"activeEventCardHash"`
+
+	// The 'current' Guardian Rank value, which starts at rank 1.
+	CurrentGuardianRank int `json:"currentGuardianRank"`
+
+	// The 'lifetime highest' Guardian Rank value, which starts at rank 1.
+	LifetimeHighestGuardianRank int `json:"lifetimeHighestGuardianRank"`
 }

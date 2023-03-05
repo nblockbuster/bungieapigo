@@ -69,6 +69,9 @@ const (
 	// This will return info about the equipped items on the character(s). Everyone can see this.
 	DestinyComponentTypeCharacterEquipment = 205
 
+	// This will return info about the loadouts of the character(s).
+	DestinyComponentTypeCharacterLoadouts = 206
+
 	// This will return basic info about instanced items - whether they can be equipped, their tracked
 	// status, and some info commonly needed in many places (current damage type, primary stat value,
 	// etc)
@@ -185,4 +188,7 @@ const (
 
 	// Returns summary status information about all "Craftables" aka crafting recipe items.
 	DestinyComponentTypeCraftables = 1300
+
+	// Returns score values for all commendations and commendation nodes.
+	DestinyComponentTypeSocialCommendations = 1400
 )

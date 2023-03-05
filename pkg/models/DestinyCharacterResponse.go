@@ -29,6 +29,10 @@ type DestinyCharacterResponse struct {
 	// COMPONENT TYPE: CharacterEquipment
 	Equipment SingleComponentResponseOfDestinyInventoryComponent `json:"equipment"`
 
+	// The loadouts available to the character.
+	// COMPONENT TYPE: CharacterLoadouts
+	Loadouts SingleComponentResponseOfDestinyLoadoutsComponent `json:"loadouts"`
+
 	// Items available from Kiosks that are available to this specific character.
 	// COMPONENT TYPE: Kiosks
 	Kiosks SingleComponentResponseOfDestinyKiosksComponent `json:"kiosks"`

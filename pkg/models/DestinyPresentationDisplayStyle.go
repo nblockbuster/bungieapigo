@@ -9,8 +9,10 @@ const (
 	// Display the item as a category, through which sub-items are filtered.
 	DestinyPresentationDisplayStyleCategory = 0
 
-	DestinyPresentationDisplayStyleBadge       = 1
-	DestinyPresentationDisplayStyleMedals      = 2
-	DestinyPresentationDisplayStyleCollectible = 3
-	DestinyPresentationDisplayStyleRecord      = 4
+	DestinyPresentationDisplayStyleBadge           = 1
+	DestinyPresentationDisplayStyleMedals          = 2
+	DestinyPresentationDisplayStyleCollectible     = 3
+	DestinyPresentationDisplayStyleRecord          = 4
+	DestinyPresentationDisplayStyleSeasonalTriumph = 5
+	DestinyPresentationDisplayStyleGuardianRank    = 6
 )

@@ -14,6 +14,9 @@ type Destiny2CoreSettings struct {
 	ExoticCatalystsRootNodeHash            int    `json:"exoticCatalystsRootNodeHash"`
 	LoreRootNodeHash                       int    `json:"loreRootNodeHash"`
 	CraftingRootNodeHash                   int    `json:"craftingRootNodeHash"`
+	LoadoutConstantsHash                   int    `json:"loadoutConstantsHash"`
+	GuardianRankConstantsHash              int    `json:"guardianRankConstantsHash"`
+	GuardianRanksRootNodeHash              int    `json:"guardianRanksRootNodeHash"`
 	CurrentRankProgressionHashes           []int  `json:"currentRankProgressionHashes"`
 	InsertPlugFreeProtectedPlugItemHashes  []int  `json:"insertPlugFreeProtectedPlugItemHashes"`
 	InsertPlugFreeBlockedSocketTypeHashes  []int  `json:"insertPlugFreeBlockedSocketTypeHashes"`

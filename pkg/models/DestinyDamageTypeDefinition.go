@@ -18,6 +18,10 @@ type DestinyDamageTypeDefinition struct {
 	// damage type enum value.
 	EnumValue DamageType `json:"enumValue"`
 
+	// A color associated with the damage type. The displayProperties icon is tinted with a color
+	// close to this.
+	Color DestinyColor `json:"color"`
+
 	// The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not
 	// globally.
 	// When entities refer to each other in Destiny content, it is this hash that they are referring to.

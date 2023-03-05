@@ -1,15 +1,15 @@
 package bungieapigo
 
-type DestinyTraitDefinition struct {
+type DestinyGuardianRankConstantsDefinition struct {
 
 	// Many Destiny*Definition contracts - the "first order" entities of Destiny that have their own
 	// tables in the Manifest Database - also have displayable information. This is the base class for
 	// that display information.
 	DisplayProperties DestinyDisplayPropertiesDefinition `json:"displayProperties"`
 
-	// An identifier for how this trait can be displayed. For example: a 'keyword' hint to show an
-	// explanation for certain related terms.
-	DisplayHint string `json:"displayHint"`
+	RankCount       int                                          `json:"rankCount"`
+	RootNodeHash    int                                          `json:"rootNodeHash"`
+	IconBackgrounds DestinyGuardianRankIconBackgroundsDefinition `json:"iconBackgrounds"`
 
 	// The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not
 	// globally.

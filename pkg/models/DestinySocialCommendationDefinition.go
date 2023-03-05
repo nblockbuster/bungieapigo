@@ -1,15 +1,23 @@
 package bungieapigo
 
-type DestinyTraitDefinition struct {
+type DestinySocialCommendationDefinition struct {
 
 	// Many Destiny*Definition contracts - the "first order" entities of Destiny that have their own
 	// tables in the Manifest Database - also have displayable information. This is the base class for
 	// that display information.
 	DisplayProperties DestinyDisplayPropertiesDefinition `json:"displayProperties"`
 
-	// An identifier for how this trait can be displayed. For example: a 'keyword' hint to show an
-	// explanation for certain related terms.
-	DisplayHint string `json:"displayHint"`
+	CardImagePath string `json:"cardImagePath"`
+
+	// Represents a color whose RGBA values are all represented as values between 0 and 255.
+	Color DestinyColor `json:"color"`
+
+	DisplayPriority            int `json:"displayPriority"`
+	ActivityGivingLimit        int `json:"activityGivingLimit"`
+	ParentCommendationNodeHash int `json:"parentCommendationNodeHash"`
+
+	// The display properties for the the activities that this commendation is available in.
+	DisplayActivities []DestinyDisplayPropertiesDefinition `json:"displayActivities"`
 
 	// The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not
 	// globally.
